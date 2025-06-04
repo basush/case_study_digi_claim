@@ -1,0 +1,19 @@
+1) Eureka
+http://localhost:8761/
+
+2) API Gate Way
+http://localhost:8765/
+
+3) Spring Cloud Config
+http://localhost:8888/
+
+4) Kafka and Zookeeper
+
+5) Digi Claim
+http://localhost:8080/
+
+6) Auth Service
+http://localhost:8082/
+
+7) Notification Service
+http://localhost:8084/

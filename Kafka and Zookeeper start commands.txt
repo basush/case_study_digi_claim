@@ -1,0 +1,14 @@
+
+
+Zookeeper
+.\bin\windows\zookeeper-server-start.bat .\config\zookeeper.properties
+
+Kafka
+.\bin\windows\kafka-server-start.bat .\config\server.properties
+
+
+
+.\bin\windows\kafka-console-producer.bat --broker-list localhost:9092 --topic NewTopic
+
+.\bin\windows\kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic claim-topic --from-beginning
+
