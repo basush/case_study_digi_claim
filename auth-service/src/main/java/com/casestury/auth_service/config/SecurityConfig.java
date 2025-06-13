@@ -44,12 +44,12 @@ public class SecurityConfig {
                 // Configure endpoint authorization
                 .authorizeHttpRequests(auth -> auth
                         // Public endpoints
-                        .requestMatchers("/auth/welcome", "/auth/register", "/auth/login").permitAll()
+                        .requestMatchers("/auth/welcome", "/auth/login").permitAll()
 
                         // Role-based endpoints
                         //.requestMatchers("/digital-claim/user/**").hasAuthority("ROLE_USER")
                         //.requestMatchers("/digital-claim/admin/**").hasAuthority("ROLE_ADMIN")
-                        //.requestMatchers("/digital-claim/submit_form/**").hasAuthority("ROLE_USER")
+                        //.requestMatchers("/digi-claim/submit_form/**").hasAuthority("ROLE_USER")
 
                         // All other endpoints require authentication
                         //.anyRequest().authenticated()

@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 @RequestMapping("/auth")
 //@RequiredArgsConstructor
-public class UserController {
+public class AuthController {
     @Autowired
     private UserInfoService service;
 
@@ -28,18 +28,6 @@ public class UserController {
     public String welcome() {
         return "Welcome this endpoint is not secure";
     }
-
-    @GetMapping("/user_details")
-    public String userDetails() {
-        return "User Details";
-    }
-
-    @PostMapping("/register")
-    public String addNewUser(@RequestBody UserInfo userInfo) {
-        return service.addUser(userInfo);
-    }
-
-    // Removed the role checks here as they are already managed in SecurityConfig
 
     @PostMapping("/login")
     public String authenticateAndGetToken(@RequestBody AuthRequest authRequest) {

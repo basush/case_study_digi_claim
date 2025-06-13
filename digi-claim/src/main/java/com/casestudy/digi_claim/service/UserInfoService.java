@@ -15,6 +15,7 @@ public class UserInfoService {
     @Autowired
     private UserInfoRepository repository;
 
+
     @Autowired
     @Lazy
     private PasswordEncoder encoder;
